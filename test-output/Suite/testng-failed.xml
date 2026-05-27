@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="firfoxbr(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="chromebr(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="testcases.logintest">
         <methods>
@@ -18,6 +18,18 @@
           <include name="appointment_book"/>
         </methods>
       </class> <!-- testcases.Apptest -->
+    </classes>
+  </test> <!-- chromebr(failed) -->
+  <test thread-count="5" name="firfoxbr(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testcases.logintest">
+        <methods>
+          <include name="login"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.logintest -->
     </classes>
   </test> <!-- firfoxbr(failed) -->
 </suite> <!-- Failed suite [Suite] -->

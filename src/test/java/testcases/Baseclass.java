@@ -18,26 +18,26 @@ public class Baseclass {
 	public void setup(String browser) {
 		
 		//FOR ONLY SINGLE BROWSER
-//		driver = new ChromeDriver();
-//		driver.get("https://katalon-demo-cura.herokuapp.com/");
-//		driver.manage().window().maximize();
-//		
+		driver = new ChromeDriver();
+		driver.get("https://katalon-demo-cura.herokuapp.com/");
+		driver.manage().window().maximize();
+		
 		
 		//FOR CROSS  BROWSER
 		
 		
-		if (browser.equalsIgnoreCase("chrome")) {
-			driver= new ChromeDriver();
-		}
-		else if (browser.equalsIgnoreCase("Edge")) {
-			
-			driver = new EdgeDriver();
-		}
-		
-		driver.get("https://katalon-demo-cura.herokuapp.com/");
- 		driver.manage().window().maximize();
- 		
-	}
+//		if (browser.equalsIgnoreCase("chrome")) {
+//			driver= new ChromeDriver();
+//		}
+//		else if (browser.equalsIgnoreCase("Edge")) {
+//			
+//			driver = new EdgeDriver();
+//		}
+//		
+//		driver.get("https://katalon-demo-cura.herokuapp.com/");
+// 		driver.manage().window().maximize();
+// 		
+}
  
 	@AfterClass
 	public void teardown() {

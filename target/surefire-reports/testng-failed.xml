@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="chromebr(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="chromebr(failed)" verbose="0">
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="testcases.logintest">
@@ -20,7 +20,7 @@
       </class> <!-- testcases.Apptest -->
     </classes>
   </test> <!-- chromebr(failed) -->
-  <test thread-count="5" name="firfoxbr(failed)">
+  <test thread-count="5" name="firfoxbr(failed)" verbose="0">
     <parameter name="browser" value="Edge"/>
     <classes>
       <class name="testcases.logintest">
@@ -30,6 +30,13 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- testcases.logintest -->
+      <class name="testcases.Apptest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="appointment_book"/>
+        </methods>
+      </class> <!-- testcases.Apptest -->
     </classes>
   </test> <!-- firfoxbr(failed) -->
 </suite> <!-- Failed suite [Suite] -->
