@@ -13,9 +13,9 @@ import org.testng.annotations.Parameters;
 public class Baseclass {
 	protected WebDriver driver;
 	
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass
-	public void setup(String browser) {
+	public void setup() {
 		
 		//FOR ONLY SINGLE BROWSER
 		driver = new ChromeDriver();
